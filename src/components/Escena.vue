@@ -1,4 +1,4 @@
-<template>
+<!--<template>
   <div>
     <!-- Button trigger modal -->
     <button
@@ -90,7 +90,7 @@
       inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
       cursor="rayOrigin: mouse"
     >
-      <a-assets>
+     <!-- <a-assets>
         <img
           v-for="cielo in cielos"
           :key="cielo"
@@ -130,7 +130,7 @@
       </a-entity>-->
 
       <!-- Iconos interactivos-->
-      <a-entity
+     <!-- <a-entity
         v-if="video"
         v-on:click="mostrarVideo"
         :position="video.posicion"
