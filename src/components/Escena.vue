@@ -101,14 +101,7 @@
         <img src="../assets/arrow.png" id="flecha" alt="" />
         <img src="../assets/youtube.png" id="youtubeLogo" alt="" />
         <img src="../assets/info.png" id="info" alt="" />
-        <a-asset-item
-          id="arrow-obj"
-          src="../img/low-poly-fox-by-pixelmannen.obj"
-        ></a-asset-item>
-        <a-asset-item
-          id="arrow-mtl"
-          src="../assets/low-poly-fox-by-pixelmannen.mtl"
-        ></a-asset-item>
+        
       </a-assets>
 
       <a-sky :src="`#${cielo}`" radius="20"></a-sky>
@@ -180,6 +173,5 @@ export default {
 </script>
 
 <style>
-.escena {
-}
+
 </style>
