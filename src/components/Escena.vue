@@ -90,7 +90,7 @@
       inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js"
       cursor="rayOrigin: mouse"
     >
-     <a-assets>
+      <a-assets>
         <img
           v-for="cielo in cielos"
           :key="cielo"
@@ -98,15 +98,23 @@
           :id="cielo"
           alt=""
         />
-        </img>
-     
-       
+        <img src="../assets/arrow.png" id="flecha" alt="" />
+        <img src="../assets/youtube.png" id="youtubeLogo" alt="" />
+        <img src="../assets/info.png" id="info" alt="" />
+        <a-asset-item
+          id="arrow-obj"
+          src="../img/low-poly-fox-by-pixelmannen.obj"
+        ></a-asset-item>
+        <a-asset-item
+          id="arrow-mtl"
+          src="../assets/low-poly-fox-by-pixelmannen.mtl"
+        ></a-asset-item>
       </a-assets>
 
       <a-sky :src="`#${cielo}`" radius="20"></a-sky>
 
       <!-- Navegación -->
-     <a-entity
+      <!--<a-entity
         geometry="primitive: plane; height: 1; width: 1"
         material="shader: flat; src: #flecha; transparent: true"
         v-for="(navegador, index) in navegadores"
@@ -122,7 +130,7 @@
       </a-entity>-->
 
       <!-- Iconos interactivos-->
-     <!-- <a-entity
+      <a-entity
         v-if="video"
         v-on:click="mostrarVideo"
         :position="video.posicion"
