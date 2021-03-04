@@ -98,6 +98,7 @@
           :id="cielo"
           alt=""
         />
+        </img>
      
        
       </a-assets>
